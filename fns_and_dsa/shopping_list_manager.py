@@ -13,6 +13,8 @@ def main():
             item = input("Enter the item to add: ").strip()
             shopping_list.append(item)
             print(f"'{item}' has been added to your shopping list.")
+        else:
+            print("Item name cannot be empty.")
         elif choice == '2':
             item = input("Enter the item to remove: ").strip()
             if item in shopping_list:
