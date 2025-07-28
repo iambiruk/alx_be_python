@@ -32,6 +32,7 @@ def main():
                     print("Your shopping list is empty.")
             elif choice == '4':
                 print("Goodbye!")
+                break
             else:
                 print("Invalid choice. Please try again.")
 if __name__ == "__main__":
