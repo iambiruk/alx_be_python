@@ -4,11 +4,11 @@ class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
         """Set up the SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
-    def test_add(self):
-        self.assertEqual(self.calc.add(2, 3), 5)
-        self.assertEqual(self.calc.add(-1, -1), -2)
-        self.assertEqual(self.calc.add(0, 0), 0)
-        self.assertEqual(self.calc.add(-3, -2), -1)
+    def test_addition(self):
+        self.assertEqual(self.calc.addition(2, 3), 5)
+        self.assertEqual(self.calc.addition(-1, -1), -2)
+        self.assertEqual(self.calc.addition(0, 0), 0)
+        self.assertEqual(self.calc.addition(-3, -2), -1)
     def test_subtract(self):
         self.assertEqual(self.calc.subtract(10, 5), 5)
         self.assertEqual(self.calc.subtract(5, 10), -5)
@@ -26,4 +26,5 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertIsNone(self.calc.divide(10, 0))
         self.assertAlmostEqual(self.calc.divide(7, 3), 2.3333333, place=6)
 if __name__ == '__main__':
+
     unittest.main()
